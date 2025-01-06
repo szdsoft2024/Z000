@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Z000
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      #注册中心
+      discovery:
+        ip: 192.168.101.77
+      #配置中心
+      config:
+        server-addr: 192.168.101.77:8848
+        username: nacos
+        password: nacos
+        #前置名称
+        prefix: z000
+        file-extension: yaml # 文件后缀名
+logging:
+  level:
+    root: INFO
